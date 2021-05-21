@@ -2,58 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e75295-3cff-4ada-9edc-973f387f1ef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/big5-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Constants/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Events/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Events/Models/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/ValidationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/UserVerificationMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/GuestDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/GuestDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/Models/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api-guest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_2021_05_21__23_54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_2021_05_22__00_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDomain/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BaseFormRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BaseListRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EntityCollectionResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EntityJsonResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api-guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-guest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621635043482</updated>
-      <workItem from="1621635044886" duration="4881000" />
+      <workItem from="1621635044886" duration="6008000" />
     </task>
     <servers />
   </component>

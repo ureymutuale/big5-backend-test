@@ -5,4 +5,5 @@ Route::group([
     'prefix' => 'guest',
     'namespace' => 'GuestDomain',
 ], function () {
+    Route::apiResource('test', 'TestController');
 });

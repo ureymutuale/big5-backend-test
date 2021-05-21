@@ -6,6 +6,7 @@ Route::group([
     'namespace' => 'UserDomain',
     'middleware' => ['auth:api', 'user']
 ], function () {
+    Route::apiResource('test', 'TestController');
 });
 
 
