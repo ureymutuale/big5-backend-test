@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -28,6 +30,19 @@ class Handler extends ExceptionHandler
     ];
 
     /**
+     * Report or log an exception.
+     *
+     * @param Throwable $exception
+     * @return void
+     *
+     * @throws Throwable
+     */
+    public function report(Throwable $exception)
+    {
+        parent::report($exception);
+    }
+
+    /**
      * Register the exception handling callbacks for the application.
      *
      * @return void
@@ -37,5 +52,35 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    /**
+     * Render an exception into an HTTP response.
+     *
+     * @param Request $request
+     * @param Throwable $exception
+     * @return Response
+     *
+     * @throws Throwable
+     */
+    public function render($request, Throwable $exception)
+    {
+        if ($exception instanceof ValidationException) {
+            return $this->reportValidationException($exception);
+        }
+        return parent::render($request, $exception);
+    }
+
+    private function reportValidationException($exception)
+    {
+        return response(['errors' => $exception->getErrors()], 422);
+    }
+
+    private function reportCustomException($exception)
+    {
+        return response([
+            'error' => true,
+            'message' => $exception->getMessage()
+        ], 423);
     }
 }
