@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e75295-3cff-4ada-9edc-973f387f1ef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Constants/DatabaseTableNames.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Constants/TaskStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Models/Task/TaskCreatedEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Models/Task/TaskDeletedEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Models/Task/TaskStatusActiveEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Models/Task/TaskStatusDoneEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Models/Task/TaskStatusPendingEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Models/Task/TaskUpdatedEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TasksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/GuestDomain/Task/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserDomain/Task/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/GuestDomain/Task/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/GuestDomain/Task/GuestTaskResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserDomain/Task/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/Task/TaskCreatedEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/Task/TaskDeletedEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/Task/TaskStatusActiveEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/Task/TaskStatusDoneEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/Task/TaskStatusPendingEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Listeners/Models/Task/TaskUpdatedEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Task/ITaskService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Task/TaskService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BaseFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BaseFormRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api-guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-guest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,20 +159,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/GuestDomain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/UserDomain" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/GuestDomain" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/UserDomain" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-      <recent name="$PROJECT_DIR$/app/Http/Middleware" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests/UserDomain" />
+      <recent name="$PROJECT_DIR$/app/Http/Requests/GuestDomain" />
+      <recent name="$PROJECT_DIR$/app/Http/Resources/UserDomain" />
+      <recent name="$PROJECT_DIR$/app/Http/Resources/GuestDomain/Task" />
+      <recent name="$PROJECT_DIR$/app/Listeners/Models/Task" />
     </key>
   </component>
   <component name="RunManager">
@@ -171,11 +191,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621635043482</updated>
-      <workItem from="1621635044886" duration="7358000" />
+      <workItem from="1621635044886" duration="13998000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

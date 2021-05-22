@@ -6,4 +6,5 @@ Route::group([
     'namespace' => 'GuestDomain',
 ], function () {
     Route::apiResource('test', 'TestController');
+    Route::apiResource('tasks', 'TasksController');
 });
