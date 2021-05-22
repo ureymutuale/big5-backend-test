@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e75295-3cff-4ada-9edc-973f387f1ef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDomain/TestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BaseFormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BaseListRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EntityCollectionResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EntityJsonResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Constants/DatabaseTableNames.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Constants/TaskStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api-guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-guest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621635043482</updated>
-      <workItem from="1621635044886" duration="6008000" />
+      <workItem from="1621635044886" duration="7358000" />
     </task>
     <servers />
   </component>
