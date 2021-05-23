@@ -4,7 +4,6 @@ namespace Database\Factories;
 
 /** @var Factory $factory */
 
-use App\Models\Task;
 use App\Models\TaskAttachment;
 use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factory;
@@ -21,8 +20,8 @@ use Illuminate\Database\Eloquent\Factory;
 */
 
 $factory->define(TaskAttachment::class, function (Faker $faker) {
-    $file= $faker->filePath();
-    $type= 'image';
+    $file = $faker->filePath();
+    $type = 'image';
     return [
         'file_type' => $type,
         'name' => $faker->name,

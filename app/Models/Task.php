@@ -21,6 +21,7 @@ class Task extends Model
     {
         parent::boot();
     }
+
     public function attachments()
     {
         return $this->hasMany(TaskAttachment::class, 'task_id', 'id');

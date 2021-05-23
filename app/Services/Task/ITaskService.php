@@ -16,7 +16,7 @@ interface ITaskService
      * @return mixed
      */
     public function getTasksWith(int $perPage, $sortBy = null, string $order = null, $filters = null,
-                                    int $byUserId = null);
+                                 int $byUserId = null);
 
     /**
      * Get Task with id

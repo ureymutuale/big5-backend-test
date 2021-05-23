@@ -2,44 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e75295-3cff-4ada-9edc-973f387f1ef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/TaskAttachmentFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/TaskAttachments/TaskAttachmentCreationApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/TaskAttachments/TaskAttachmentDeletionApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/TaskAttachments/TaskAttachmentListingApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskCreationApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskDeletionApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskListingApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskUpdateApiTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/TaskAttachments/TaskAttachmentCreationTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/TaskAttachments/TaskAttachmentDeletionTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/TaskAttachments/TaskAttachmentListingTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskCreationTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskDeletionTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskListingTests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskUpdateTests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/big5-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/big5-backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TaskAttachmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TaskAttachmentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/TaskAttachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TaskAttachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Task/ITaskService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Task/ITaskService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Task/TaskService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Task/TaskService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/TaskAttachment/TaskAttachmentService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TaskAttachment/TaskAttachmentService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TaskFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TaskFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/Task/TasksSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Task/TasksSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TaskAttachmentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TaskAttachmentFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postman/Big5 Api.postman_environment.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman/Big5 Api.postman_environment.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api-guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-guest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621635043482</updated>
-      <workItem from="1621635044886" duration="46383000" />
+      <workItem from="1621635044886" duration="47352000" />
     </task>
     <servers />
   </component>
