@@ -2,26 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e75295-3cff-4ada-9edc-973f387f1ef9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TaskAttachmentsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/GuestDomain/TaskAttachment/GuestTaskAttachmentResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/TaskAttachment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/TaskAttachment/ITaskAttachmentService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/TaskAttachment/TaskAttachmentService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/TaskFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_22_094938_create_task_attachments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/Task/TasksSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TaskAttachmentFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TaskAttachments/TaskAttachmentCreationApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TaskAttachments/TaskAttachmentDeletionApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/TaskAttachments/TaskAttachmentListingApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskCreationApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskDeletionApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskListingApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Tasks/TaskUpdateApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/TaskAttachments/TaskAttachmentCreationTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/TaskAttachments/TaskAttachmentDeletionTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/TaskAttachments/TaskAttachmentListingTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskCreationTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskDeletionTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskListingTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Tasks/TaskUpdateTests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/big5-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/big5-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Constants/DatabaseTableNames.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Constants/DatabaseTableNames.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TaskAttachmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TaskAttachmentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestDomain/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BaseFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BaseFormRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/GuestDomain/Task/GuestTaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/GuestDomain/Task/GuestTaskResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Task/TaskService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Task/TaskService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/TaskAttachment/TaskAttachmentService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/TaskAttachment/TaskAttachmentService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TaskFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TaskFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postman/Big5 Api.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman/Big5 Api.postman_collection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postman/Big5 Api.postman_environment.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman/Big5 Api.postman_environment.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api-guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api-guest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Task/TasksSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Task/TasksSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +86,6 @@
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -113,7 +130,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
@@ -144,6 +160,14 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/webpatser/laravel-uuid" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/vendor/waavi/sanitizer" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/bcmath_compat" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
     </include_path>
   </component>
   <component name="ProjectId" id="1sreH2Me5gPHUYDfdrOV9qOtiCC" />
@@ -159,25 +183,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/UserDomain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/factories" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Requests/UserDomain" />
-      <recent name="$PROJECT_DIR$/app/Http/Requests/GuestDomain" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/UserDomain" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources/GuestDomain/Task" />
-      <recent name="$PROJECT_DIR$/app/Listeners/Models/Task" />
+      <recent name="$PROJECT_DIR$/database/factories" />
+      <recent name="$PROJECT_DIR$/tests/Unit" />
+      <recent name="$PROJECT_DIR$/tests/Feature" />
+      <recent name="$PROJECT_DIR$/tests/Unit/Tasks" />
+      <recent name="$PROJECT_DIR$/app/Listeners/Models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.TaskCreationApiTests.test_createValidTask">
+    <configuration name="TaskCreationApiTests.test_createValidTask" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Tasks\TaskCreationApiTests" file="$PROJECT_DIR$/tests/Feature/Tasks/TaskCreationApiTests.php" method="test_createValidTask" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.TaskCreationApiTests.test_createValidTask" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621635043482</updated>
-      <workItem from="1621635044886" duration="28456000" />
+      <workItem from="1621635044886" duration="46383000" />
     </task>
     <servers />
   </component>

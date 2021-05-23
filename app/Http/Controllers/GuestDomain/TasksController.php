@@ -164,7 +164,7 @@ class TasksController extends Controller
         $task = $this->taskService->deleteTaskWithId($taskId, $filters, null);
         $data = new GuestTaskResource($task);
         return [
-            'deleted' => $id != null,
+            'deleted' => $task != null,
             'data' => $data
         ];
     }

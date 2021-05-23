@@ -94,8 +94,8 @@ class TaskAttachmentService extends TaskService implements ITaskAttachmentServic
 
     public function createTaskAttachmentWith($taskAttachmentDetails, $filters = null, int $byUserId = null)
     {
-        $taskId = $taskAttachmentDetails['task_id'];
-        $file = $taskAttachmentDetails['file'];
+        $taskId = Arr::get($taskAttachmentDetails, 'task_id');
+        $file = Arr::get($taskAttachmentDetails, 'file');
         if (!isset($taskId) || !isset($file)) {
             return null;//throw error for no file
         }
@@ -110,9 +110,9 @@ class TaskAttachmentService extends TaskService implements ITaskAttachmentServic
             $attachmentFolder = trim("public/task/{$taskId}/attachments", '/');
             $mimeType = $file->getMimeType();
             $extension = $file->getClientOriginalExtension();
-            $filename = $file->getClientOriginalName();
-//            $filename = strtolower(Uuid::generate(4)->string);
-//            $filename = "{$filename}.{$extension}";
+//            $filename = $file->getClientOriginalName();
+            $filename = strtolower(Uuid::generate(4)->string);
+            $filename = "{$filename}.{$extension}";
             $fileUri = Storage::disk($storageDisk)->putFileAs($attachmentFolder, $file, $filename, 'public');
 
             $fileType = $mimeType;

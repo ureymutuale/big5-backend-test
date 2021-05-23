@@ -104,7 +104,7 @@ class TaskAttachmentsController extends Controller
         $task = $this->attachmentService->deleteTaskAttachmentWithId($attachmentId, $filters, null);
         $data = new GuestTaskAttachmentResource($task);
         return [
-            'deleted' => $id != null,
+            'deleted' => $task != null,
             'data' => $data
         ];
     }

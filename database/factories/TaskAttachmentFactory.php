@@ -20,14 +20,13 @@ use Illuminate\Database\Eloquent\Factory;
 |
 */
 
-$factory->define(Task::class, function (Faker $faker) {
-    $name = "{$faker->sentence(4)}";
+$factory->define(TaskAttachment::class, function (Faker $faker) {
+    $file= $faker->filePath();
+    $type= 'image';
     return [
-        'title' => "{$name}",
-        'description' => $faker->realText(),
-        'status' => 'PENDING',
+        'file_type' => $type,
+        'name' => $faker->name,
+        'uri' => $file,
+//        'task_id',
     ];
-});
-$factory->afterCreating(Task::class, function ($task, $faker) {
-    $task->attachments()->createMany(factory(TaskAttachment::class, 3)->make()->toArray());
 });

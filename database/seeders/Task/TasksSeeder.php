@@ -3,7 +3,6 @@
 
 namespace Database\Seeders\Task;
 
-
 use App\Events\Models\Task\TaskCreatedEvent;
 use App\Models\Task;
 use App\Services\Task\TaskService;
@@ -21,10 +20,7 @@ class TasksSeeder extends Seeder
         $taskService = new TaskService();
         $tasks = [];
         try {
-            $tasks = Task::factory()
-                ->count(10)
-                ->create();
-//            $tasks = factory(Task::class, 10)->create();
+            $tasks = factory(Task::class, 10)->create();
         } catch (\Exception $exception) {
 
         }
