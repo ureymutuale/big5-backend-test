@@ -1,14 +1,16 @@
 <?php
 
 
-namespace App\Http\Resources\GuestDomain\Task;
+namespace App\Http\Resources\GuestDomain\TaskAttachment;
 
 
 use App\Http\Resources\EntityJsonResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\URL;
 
-class GuestTaskResource extends EntityJsonResource
+class GuestTaskAttachmentResource extends EntityJsonResource
 {
     /**
      * Transform the resource into an array.
@@ -23,9 +25,10 @@ class GuestTaskResource extends EntityJsonResource
             return null;
         }
         $response = parent::toArray($request);
-        $response['attachments_count'] = count($resource['attachments']);
+        $response['url'] = URL::to(Storage::url($resource['uri']));
 
-        unset($response['attachments']);
+        unset($response['task_id']);
+        unset($response['task']);
         unset($response['created_at']);
         unset($response['updated_at']);
         unset($response['deleted_at']);

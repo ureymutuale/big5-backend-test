@@ -21,7 +21,8 @@ class TaskService implements ITaskService
 
     public function getTasksWith(int $perPage, $sortBy = null, string $order = null, $filters = null, int $byUserId = null)
     {
-        $query = Task::query();
+        $query = Task::query()
+            ->with(['attachments']);
 
         //Keyword filtering
         if (Arr::get($filters, 'search') !== null) {
@@ -67,7 +68,8 @@ class TaskService implements ITaskService
     public function findTaskWithId($id, $filters = null, int $byUserId = null)
     {
         $query = Task::query()
-            ->where('id', $id);
+            ->where('id', $id)
+            ->with(['attachments']);
 
         $query = $query->first();
 
@@ -94,6 +96,7 @@ class TaskService implements ITaskService
 
         if ($entity !== null) {
             $entity = $entity->fresh();
+            $entity = $entity->load(['attachments']);
             event(new TaskCreatedEvent($entity, $byUserId));
         }
 
@@ -123,6 +126,7 @@ class TaskService implements ITaskService
                 $entity->save();
 
                 $entity = $entity->fresh();
+                $entity = $entity->load(['attachments']);
             } catch (Exception $e) {
             }
         }

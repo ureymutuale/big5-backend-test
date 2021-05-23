@@ -9,6 +9,147 @@
 			"name": "Tasks",
 			"item": [
 				{
+					"name": "Attachments",
+					"item": [
+						{
+							"name": "Get Attachments",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/guest/tasks/1/attachments?per_page=20",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"guest",
+										"tasks",
+										"1",
+										"attachments"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "per_page",
+											"value": "20"
+										},
+										{
+											"key": "order_by",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "order",
+											"value": "desc",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Attachment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/ureymt/Downloads/one-screen-bg copy 2.png"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/guest/tasks/1/attachments",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"guest",
+										"tasks",
+										"1",
+										"attachments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Attachment",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/guest/tasks/1/attachments/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"guest",
+										"tasks",
+										"1",
+										"attachments",
+										"1"
+									],
+									"query": [
+										{
+											"key": "force",
+											"value": "0",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "Get Tasks",
 					"request": {
 						"method": "GET",
@@ -95,8 +236,33 @@
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"title\": \"Task {{random_number}}\", \n    \"description\": \"Task {{random_number}} Description\"\n}",
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Task {{random_number}}",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Task {{random_number}} Description",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "PENDING",
+									"type": "text"
+								},
+								{
+									"key": "attachments[]",
+									"type": "file",
+									"src": [
+										"/Users/ureymt/Downloads/one-screen-bg copy 2.png",
+										"/Users/ureymt/Downloads/one-screen-bg.png",
+										"/Users/ureymt/Downloads/pngjoy.com_cocktail-cocktail-sketch-png-png-download_412387.png"
+									]
+								}
+							],
 							"options": {
 								"raw": {
 									"language": "json"

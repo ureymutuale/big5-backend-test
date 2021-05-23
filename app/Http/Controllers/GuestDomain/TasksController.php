@@ -10,6 +10,7 @@ use App\Http\Requests\BaseListRequest;
 use App\Http\Resources\EntityCollectionResource;
 use App\Http\Resources\GuestDomain\Task\GuestTaskResource;
 use App\Services\Task\TaskService;
+use App\Services\TaskAttachment\TaskAttachmentService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -88,15 +89,30 @@ class TasksController extends Controller
      */
     public function store(Request $request)
     {
+        $validStatuses = implode(',', [TaskStatus::Pending, TaskStatus::Active, TaskStatus::Done]);
         $this->validateRequest($request, [
             'title' => 'string|required',
-            'description' => 'string|nullable'
+            'description' => 'string|nullable',
+            'status' => "string|nullable|in:$validStatuses",
+            'attachments.*' => 'nullable|mimes:png,jpg,jpeg,csv,txt,xlx,xls,pdf|max:5120',
         ]);
         //$requestUser = $request->user();
         $filters = [];
-        $data = $request->only(['title', 'description']);
+        $data = $request->only(['title', 'description', 'attachments']);
 
         $task = $this->taskService->createTaskWith($data, $filters, null);
+        if (isset($task) && isset($data['attachments']) && is_array($data['attachments']) && count($data['attachments']) > 0) {
+            $attachments = $data['attachments'];
+            $attachmentService = new TaskAttachmentService();
+            foreach ($attachments as $attachment) {
+                $attachmentData = [
+                    'task_id' => $task->id,
+                    'file' => $attachment
+                ];
+                $attachmentService->createTaskAttachmentWith($attachmentData, null, null);
+            }
+            $task = $this->taskService->findTaskWithId($task->id, $filters, null);
+        }
         return new GuestTaskResource($task);
     }
 

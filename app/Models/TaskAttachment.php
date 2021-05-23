@@ -7,24 +7,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Task extends Model
+class TaskAttachment  extends Model
 {
     use SoftDeletes;
 
     protected $fillable = [
-        'title',
-        'description',
-        'status'
+        'file_type',
+        'name',
+        'uri',
+        'task_id',
     ];
 
     public static function boot()
     {
         parent::boot();
     }
-    public function attachments()
+
+    public function task()
     {
-        return $this->hasMany(TaskAttachment::class, 'task_id', 'id');
+        return $this->belongsTo(Task::class, 'task_id', 'id');
     }
 }
-
 
